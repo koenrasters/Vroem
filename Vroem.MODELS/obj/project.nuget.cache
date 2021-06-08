@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "Q6G0pdZH6YvHkPqiMLWFjndQ82ux7uOUiCDnJCSc5dgynvyJVAbpkGsrIJjIpxqNOys8C0RDvgOKVlKLhMWVHw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\koenr\\source\\repos\\Vroem\\Vroem.MODELS\\Vroem.MODELS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\koenr\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

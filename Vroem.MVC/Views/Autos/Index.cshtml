@@ -1,0 +1,103 @@
+﻿@using Vroem.LOGIC
+@using Vroem.DAL
+@model IEnumerable<Vroem.MODELS.Car>
+@{
+    ViewData["Title"] = "Autos";
+    UserManager _userManager = new UserManager(new DataAccess("db"));
+    CarManager _carManager = new CarManager(new DataAccess("db"));
+}
+<h1>@ViewData["Title"]</h1>
+
+@foreach (var auto in Model)
+{
+    var afbeelding = _carManager.GetFirstImage(auto.Id);
+    string image;
+    try
+    {
+        image = "data:image/png;base64," + Convert.ToBase64String(@afbeelding.Bestand, 0, @afbeelding.Bestand.Length);
+    }
+    catch (Exception e)
+    {
+        image = "/images/404.gif";
+    }
+    <div class="row" style="border: 1px solid black; margin-bottom: 15px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+        <img class="col-3" src="@image" width="100%" style="padding: 15px;"/>
+        <div class="col-9 row">
+            <div class="col-6" style="padding-top: 15px;">
+                <p class="col" >@auto.Titel</p>
+               
+                @if (auto.Bieden)
+                {
+                    <p class="col" style="font-weight: bold;">Bieden vanaf: €@auto.Prijs</p>
+                }
+                else
+                {
+                    <p class="col" style="font-weight: bold;">Prijs is: €@auto.Prijs</p>
+                }
+            </div>
+            <div class="col-6" style=" padding-top: 15px;">
+                <p>De kilometerstand is: @auto.Kilometerstand KM</p>
+                <p>Bouwjaar van deze auto: @auto.Bouwjaar</p>
+                <br/>
+                <a asp-controller="Auto" asp-action="Index" asp-route-id="@auto.Id" class="btn btn-primary">Meer info</a>
+            </div>
+             
+        </div>
+
+    </div>
+}
+
+@* <table class="table table-hover"> *@
+@*     <thead> *@
+@*     <tr> *@
+@*         <th scope="col">Afbeelding</th> *@
+@*         <th scope="col">Kenteken</th> *@
+@*         <th scope="col">Titel</th> *@
+@*         <th scope="col">Beschrijving</th> *@
+@*         <th scope="col">Bouwjaar</th> *@
+@*         <th scope="col">Kilometerstand</th> *@
+@*         <th scope="col">Vermogen</th> *@
+@*         <th scope="col">Geregistreer</th> *@
+@*         <th scope="col">Gebruiker</th> *@
+@*         <th scope="col">Merk</th> *@
+@*         <th scope="col">Model</th> *@
+@*         <th scope="col">Kleur</th> *@
+@*         <th scope="col">Brandstof</th> *@
+@*         <th scope="col">Transmissie</th> *@
+@*         <th scope="col">Carroserie</th> *@
+@* *@
+@*     </tr> *@
+@*     </thead> *@
+@*     <tbody> *@
+@*     @foreach (var auto in Model) *@
+@*     { *@
+@*         var afbeelding = _carManager.GetFirstImage(auto.Id); *@
+@*         string image; *@
+@*         try *@
+@*         { *@
+@*             image = "data:image/png;base64," + Convert.ToBase64String(@afbeelding.Bestand, 0, @afbeelding.Bestand.Length); *@
+@*         } *@
+@*         catch (Exception e) *@
+@*         { *@
+@*             image = "/images/404.gif"; *@
+@*         } *@
+@*         <tr> *@
+@*             <td><a asp-controller="Auto" asp-action="Index" asp-route-id="@auto.Id"><img src="@image" width="100px"></a></td> *@
+@*             <td>@auto.Kenteken</td> *@
+@*             <td>@auto.Titel</td> *@
+@*             <td>@auto.Beschrijving</td> *@
+@*             <td>@auto.Bouwjaar</td> *@
+@*             <td>@auto.Kilometerstand</td> *@
+@*             <td>@auto.Vermogen</td> *@
+@*             <td>@auto.DatumGeregistreerd</td> *@
+@*             <td>@_userManager.GetUser(auto.GebruikerID).Voornaam</td> *@
+@*             <td>@auto.Merk</td> *@
+@*             <td>@auto.Model</td> *@
+@*             <td>@auto.Kleur</td> *@
+@*             <td>@auto.Brandstof</td> *@
+@*             <td>@auto.Transmissie</td> *@
+@*             <td>@auto.Carroserie</td> *@
+@*         </tr> *@
+@*     } *@
+@*     </tbody> *@
+@* </table> *@

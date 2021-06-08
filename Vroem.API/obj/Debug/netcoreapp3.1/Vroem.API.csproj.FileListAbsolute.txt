@@ -1,0 +1,14 @@
+C:\Users\koenr\source\repos\Vroem\Vroem.API\bin\Debug\netcoreapp3.1\Vroem.API.deps.json
+C:\Users\koenr\source\repos\Vroem\Vroem.API\bin\Debug\netcoreapp3.1\Vroem.API.dll
+C:\Users\koenr\source\repos\Vroem\Vroem.API\obj\Debug\netcoreapp3.1\Vroem.API.csprojAssemblyReference.cache
+C:\Users\koenr\source\repos\Vroem\Vroem.API\obj\Debug\netcoreapp3.1\Vroem.API.AssemblyInfoInputs.cache
+C:\Users\koenr\source\repos\Vroem\Vroem.API\obj\Debug\netcoreapp3.1\Vroem.API.AssemblyInfo.cs
+C:\Users\koenr\source\repos\Vroem\Vroem.API\bin\Debug\netcoreapp3.1\Vroem.API.pdb
+C:\Users\koenr\source\repos\Vroem\Vroem.API\bin\Debug\netcoreapp3.1\Vroem.MODELS.dll
+C:\Users\koenr\source\repos\Vroem\Vroem.API\bin\Debug\netcoreapp3.1\Vroem.MODELS.pdb
+C:\Users\koenr\source\repos\Vroem\Vroem.API\obj\Debug\netcoreapp3.1\Vroem.API.csproj.CoreCompileInputs.cache
+C:\Users\koenr\source\repos\Vroem\Vroem.API\obj\Debug\netcoreapp3.1\Vroem.API.csproj.CopyComplete
+C:\Users\koenr\source\repos\Vroem\Vroem.API\obj\Debug\netcoreapp3.1\Vroem.API.dll
+C:\Users\koenr\source\repos\Vroem\Vroem.API\obj\Debug\netcoreapp3.1\Vroem.API.pdb
+C:\Users\koenr\source\repos\Vroem\Vroem.API\bin\Debug\netcoreapp3.1\Vroem.INTERFACES.dll
+C:\Users\koenr\source\repos\Vroem\Vroem.API\bin\Debug\netcoreapp3.1\Vroem.INTERFACES.pdb

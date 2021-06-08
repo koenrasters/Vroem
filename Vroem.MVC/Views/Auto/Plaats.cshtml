@@ -1,0 +1,144 @@
+﻿@using Vroem.MODELS
+@using Microsoft.AspNetCore.Http
+@model CarViewModel
+
+@{
+    ViewBag.Title = "Plaat auto";
+    var auto = ViewData["Auto"] as Car;
+}
+<link rel="stylesheet" href="~/css/Plaats.css" type="text/css"/>
+<script>
+    var i = 2;    
+    function test() {
+    $("#test").append("" +
+        "<label id=\"" + i + "\" class=\"afbeeldingUpload\">" +
+            "<img id=\"afbeelding" + i + "\"/>" +
+            "<input hidden type=\"file\" name=\"Afbeelding\" onchange=\"document.getElementById('afbeelding" + i + "').src = window.URL.createObjectURL(this.files[0]); test()\">"+
+            /*"<i id=\"del"+i+"\" class=\"fa fa-times del\" onclick=\"rem(this)\"></i>"+*/
+        "</label>"); 
+    i++;
+    }   
+    function rem(el) {
+        el.closest('label').remove();
+        i--;
+    }   
+    function add(){
+        if(document.getElementById("check").checked){
+            $("#check").closest('div').append("<div class=\"form-group\" id=\"bieding\">\n"+
+                                               "                <label>Biedprijs vanaf</label>\n"+
+                                               "                <input type=\"number\" id=\"readonly\" class=\"form-control\" name=\"Prijs\" placeholder=\"Vul hier een prijs in\">\n"+
+                                               "                <label>Geen biedprijs vanaf gebruiken</label>"+
+                                               "                <input type=\"checkbox\" placeholder=\"Vul hier een prijs in\" onchange=\"tgl()\">\n"+
+                                               "            </div>");
+            document.getElementById("price").style.display = "none";
+        } else{
+            document.getElementById("price").style.display = "block";
+            document.getElementById("bieding").remove();
+        }
+    }
+    
+    function tgl() {
+        var x = document.getElementById("readonly");
+        if(x.readOnly){
+            x.readOnly = false;    
+        } else{
+            x.readOnly = true;
+            x.value = null;
+        }
+    }
+</script>
+
+@{
+    if (auto != null)
+    {
+        <form asp-action="Plaats" , asp-controller="Auto" method="post" enctype="multipart/form-data">
+            <div id="test">
+                <label id="0" class="afbeeldingUpload">
+                    <img id="afbeelding0"/>
+                    <input hidden type="file" asp-for="Afbeelding" onchange="document.getElementById('afbeelding0').src = window.URL.createObjectURL(this.files[0]);">
+                </label>
+                <span asp-validation-for="Afbeelding" class="text-danger"></span>
+                <label id="1" class="afbeeldingUpload">
+                    <img id="afbeelding1"/>
+                    <input hidden type="file" asp-for="Afbeelding" onchange="document.getElementById('afbeelding1').src = window.URL.createObjectURL(this.files[0]); test()">
+                </label>
+            </div>
+            <div class="form-group">
+                <label asp-for="Titel"></label>
+                <input type="text" class="form-control" asp-for="Titel" placeholder="Vul hier een titel in">
+                <span asp-validation-for="Titel" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Beschrijving"></label>
+                <input type="text" class="form-control" asp-for="Beschrijving" placeholder="Vul hier een beschrijving in">
+                <span asp-validation-for="Beschrijving" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Kenteken"></label>
+                <input type="text" class="form-control" asp-for="Kenteken" placeholder="Vul hier je voornaam in" value="@auto.Kenteken" readonly>
+                <span asp-validation-for="Kenteken" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Merk"></label>
+                <input type="text" class="form-control" asp-for="Merk" placeholder="Vul hier je achternaam in" value="@auto.Merk" readonly>
+                <span asp-validation-for="Merk" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Model"></label>
+                <input type="text" class="form-control" asp-for="Model" placeholder="Enter email" value="@auto.Model" readonly>
+                <span asp-validation-for="Model" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Bouwjaar"></label>
+                <input type="number" class="form-control" asp-for="Bouwjaar" placeholder="Enter email" value="@auto.Bouwjaar" readonly>
+                <span asp-validation-for="Bouwjaar" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Vermogen"></label>
+                <input type="text" class="form-control" asp-for="Vermogen" placeholder="Enter Gebruikersnaam" value="@auto.Vermogen" readonly>PK
+                <span asp-validation-for="Vermogen" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Brandstof"></label>
+                <input type="text" class="form-control" asp-for="Brandstof" placeholder="Enter Woonplaats" value="@auto.Brandstof" readonly>
+                <span asp-validation-for="Brandstof" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Kleur"></label>
+                <input type="text" class="form-control" asp-for="Kleur" placeholder="Enter telefoonnummer" value="@auto.Kleur" readonly>
+                <span asp-validation-for="Kleur" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Carroserie"></label>
+                <input type="text" class="form-control" asp-for="Carroserie" placeholder="Enter carrosserie" value="@auto.Carroserie" readonly>
+                <span asp-validation-for="Carroserie" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Kilometerstand"></label>
+                <input type="number" class="form-control" asp-for="Kilometerstand" placeholder="Enter kilometerstand">
+                <span asp-validation-for="Kilometerstand" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Transmissie"></label>
+                <select asp-for="Transmissie" class="form-control">
+                    <option selected disabled hidden>Kies een transmissie</option>
+                    <option value="Handgeschakeld">Handgeschakeld</option>
+                    <option value="Automaat">Automaat</option>
+                </select>
+                @*<input type="text" class="form-control" asp-for="Transmissie" placeholder="Enter Transmissie">*@
+                <span asp-validation-for="Transmissie" class="text-danger"></span>
+            </div>
+            <div>
+                <label>Bieden toestaan</label>
+                <input type="checkbox" id="check" asp-for="Bieden" placeholder="Klik hier om bieden aan te zetten" onchange="add()">
+            </div>
+            <div class="form-group" id="price">
+                <label asp-for="Prijs"></label>
+                <input type="number" class="form-control" asp-for="Prijs" placeholder="Vul hier een prijs in">
+                <span asp-validation-for="Prijs" class="text-danger"></span>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    }
+}

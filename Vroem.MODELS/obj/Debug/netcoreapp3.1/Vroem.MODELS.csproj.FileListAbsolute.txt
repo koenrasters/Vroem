@@ -1,0 +1,9 @@
+C:\Users\koenr\source\repos\Vroem\Vroem.MODELS\bin\Debug\netcoreapp3.1\Vroem.MODELS.deps.json
+C:\Users\koenr\source\repos\Vroem\Vroem.MODELS\bin\Debug\netcoreapp3.1\Vroem.MODELS.dll
+C:\Users\koenr\source\repos\Vroem\Vroem.MODELS\bin\Debug\netcoreapp3.1\Vroem.MODELS.pdb
+C:\Users\koenr\source\repos\Vroem\Vroem.MODELS\obj\Debug\netcoreapp3.1\Vroem.MODELS.csprojAssemblyReference.cache
+C:\Users\koenr\source\repos\Vroem\Vroem.MODELS\obj\Debug\netcoreapp3.1\Vroem.MODELS.AssemblyInfoInputs.cache
+C:\Users\koenr\source\repos\Vroem\Vroem.MODELS\obj\Debug\netcoreapp3.1\Vroem.MODELS.AssemblyInfo.cs
+C:\Users\koenr\source\repos\Vroem\Vroem.MODELS\obj\Debug\netcoreapp3.1\Vroem.MODELS.dll
+C:\Users\koenr\source\repos\Vroem\Vroem.MODELS\obj\Debug\netcoreapp3.1\Vroem.MODELS.pdb
+C:\Users\koenr\source\repos\Vroem\Vroem.MODELS\obj\Debug\netcoreapp3.1\Vroem.MODELS.csproj.CoreCompileInputs.cache

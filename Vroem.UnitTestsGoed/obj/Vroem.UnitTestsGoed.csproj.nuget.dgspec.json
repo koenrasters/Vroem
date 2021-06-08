@@ -1,0 +1,521 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\koenr\\source\\repos\\Vroem\\Vroem.UnitTestsGoed\\Vroem.UnitTestsGoed.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\koenr\\source\\repos\\Vroem\\Vroem.API\\Vroem.API.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\koenr\\source\\repos\\Vroem\\Vroem.API\\Vroem.API.csproj",
+        "projectName": "Vroem.API",
+        "projectPath": "C:\\Users\\koenr\\source\\repos\\Vroem\\Vroem.API\\Vroem.API.csproj",
+        "packagesPath": "C:\\Users\\koenr\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\koenr\\source\\repos\\Vroem\\Vroem.API\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\koenr\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Users\\koenr\\source\\repos\\Vroem\\Vroem.INTERFACES\\Vroem.INTERFACES.csproj": {
+                "projectPath": "C:\\Users\\koenr\\source\\repos\\Vroem\\Vroem.INTERFACES\\Vroem.INTERFACES.csproj"
+              },
+              "C:\\Users\\koenr\\source\\repos\\Vroem\\Vroem.MODELS\\Vroem.MODELS.csproj": {
+                "projectPath": "C:\\Users\\koenr\\source\\repos\\Vroem\\Vroem.MODELS\\Vroem.MODELS.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\koenr\\source\\repos\\Vroem\\Vroem.DAL\\Vroem.DAL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\koenr\\source\\repos\\Vroem\\Vroem.DAL\\Vroem.DAL.csproj",
+        "projectName": "Vroem.DAL",
+        "projectPath": "C:\\Users\\koenr\\source\\repos\\Vroem\\Vroem.DAL\\Vroem.DAL.csproj",
+        "packagesPath": "C:\\Users\\koenr\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\koenr\\source\\repos\\Vroem\\Vroem.DAL\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\koenr\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Users\\koenr\\source\\repos\\Vroem\\Vroem.API\\Vroem.API.csproj": {
+                "projectPath": "C:\\Users\\koenr\\source\\repos\\Vroem\\Vroem.API\\Vroem.API.csproj"
+              },
+              "C:\\Users\\koenr\\source\\repos\\Vroem\\Vroem.DATA\\Vroem.DATA.csproj": {
+                "projectPath": "C:\\Users\\koenr\\source\\repos\\Vroem\\Vroem.DATA\\Vroem.DATA.csproj"
+              },
+              "C:\\Users\\koenr\\source\\repos\\Vroem\\Vroem.INTERFACES\\Vroem.INTERFACES.csproj": {
+                "projectPath": "C:\\Users\\koenr\\source\\repos\\Vroem\\Vroem.INTERFACES\\Vroem.INTERFACES.csproj"
+              },
+              "C:\\Users\\koenr\\source\\repos\\Vroem\\Vroem.MODELS\\Vroem.MODELS.csproj": {
+                "projectPath": "C:\\Users\\koenr\\source\\repos\\Vroem\\Vroem.MODELS\\Vroem.MODELS.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\koenr\\source\\repos\\Vroem\\Vroem.DATA\\Vroem.DATA.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\koenr\\source\\repos\\Vroem\\Vroem.DATA\\Vroem.DATA.csproj",
+        "projectName": "Vroem.DATA",
+        "projectPath": "C:\\Users\\koenr\\source\\repos\\Vroem\\Vroem.DATA\\Vroem.DATA.csproj",
+        "packagesPath": "C:\\Users\\koenr\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\koenr\\source\\repos\\Vroem\\Vroem.DATA\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\koenr\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Users\\koenr\\source\\repos\\Vroem\\Vroem.INTERFACES\\Vroem.INTERFACES.csproj": {
+                "projectPath": "C:\\Users\\koenr\\source\\repos\\Vroem\\Vroem.INTERFACES\\Vroem.INTERFACES.csproj"
+              },
+              "C:\\Users\\koenr\\source\\repos\\Vroem\\Vroem.MODELS\\Vroem.MODELS.csproj": {
+                "projectPath": "C:\\Users\\koenr\\source\\repos\\Vroem\\Vroem.MODELS\\Vroem.MODELS.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "BCrypt.Net-Next": {
+              "target": "Package",
+              "version": "[4.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[3.1.3, )"
+            },
+            "Microsoft.Extensions.Configuration.UserSecrets": {
+              "target": "Package",
+              "version": "[3.1.3, )"
+            },
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[8.0.20, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\koenr\\source\\repos\\Vroem\\Vroem.INTERFACES\\Vroem.INTERFACES.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\koenr\\source\\repos\\Vroem\\Vroem.INTERFACES\\Vroem.INTERFACES.csproj",
+        "projectName": "Vroem.INTERFACES",
+        "projectPath": "C:\\Users\\koenr\\source\\repos\\Vroem\\Vroem.INTERFACES\\Vroem.INTERFACES.csproj",
+        "packagesPath": "C:\\Users\\koenr\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\koenr\\source\\repos\\Vroem\\Vroem.INTERFACES\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\koenr\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Users\\koenr\\source\\repos\\Vroem\\Vroem.MODELS\\Vroem.MODELS.csproj": {
+                "projectPath": "C:\\Users\\koenr\\source\\repos\\Vroem\\Vroem.MODELS\\Vroem.MODELS.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\koenr\\source\\repos\\Vroem\\Vroem.LOGIC\\Vroem.LOGIC.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\koenr\\source\\repos\\Vroem\\Vroem.LOGIC\\Vroem.LOGIC.csproj",
+        "projectName": "Vroem.LOGIC",
+        "projectPath": "C:\\Users\\koenr\\source\\repos\\Vroem\\Vroem.LOGIC\\Vroem.LOGIC.csproj",
+        "packagesPath": "C:\\Users\\koenr\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\koenr\\source\\repos\\Vroem\\Vroem.LOGIC\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\koenr\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Users\\koenr\\source\\repos\\Vroem\\Vroem.DAL\\Vroem.DAL.csproj": {
+                "projectPath": "C:\\Users\\koenr\\source\\repos\\Vroem\\Vroem.DAL\\Vroem.DAL.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.AspNetCore.Authentication.Cookies": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[8.0.20, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\koenr\\source\\repos\\Vroem\\Vroem.MODELS\\Vroem.MODELS.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\koenr\\source\\repos\\Vroem\\Vroem.MODELS\\Vroem.MODELS.csproj",
+        "projectName": "Vroem.MODELS",
+        "projectPath": "C:\\Users\\koenr\\source\\repos\\Vroem\\Vroem.MODELS\\Vroem.MODELS.csproj",
+        "packagesPath": "C:\\Users\\koenr\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\koenr\\source\\repos\\Vroem\\Vroem.MODELS\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\koenr\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\koenr\\source\\repos\\Vroem\\Vroem.UnitTestsGoed\\Vroem.UnitTestsGoed.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\koenr\\source\\repos\\Vroem\\Vroem.UnitTestsGoed\\Vroem.UnitTestsGoed.csproj",
+        "projectName": "Vroem.UnitTestsGoed",
+        "projectPath": "C:\\Users\\koenr\\source\\repos\\Vroem\\Vroem.UnitTestsGoed\\Vroem.UnitTestsGoed.csproj",
+        "packagesPath": "C:\\Users\\koenr\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\koenr\\source\\repos\\Vroem\\Vroem.UnitTestsGoed\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\koenr\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Users\\koenr\\source\\repos\\Vroem\\Vroem.API\\Vroem.API.csproj": {
+                "projectPath": "C:\\Users\\koenr\\source\\repos\\Vroem\\Vroem.API\\Vroem.API.csproj"
+              },
+              "C:\\Users\\koenr\\source\\repos\\Vroem\\Vroem.DAL\\Vroem.DAL.csproj": {
+                "projectPath": "C:\\Users\\koenr\\source\\repos\\Vroem\\Vroem.DAL\\Vroem.DAL.csproj"
+              },
+              "C:\\Users\\koenr\\source\\repos\\Vroem\\Vroem.DATA\\Vroem.DATA.csproj": {
+                "projectPath": "C:\\Users\\koenr\\source\\repos\\Vroem\\Vroem.DATA\\Vroem.DATA.csproj"
+              },
+              "C:\\Users\\koenr\\source\\repos\\Vroem\\Vroem.LOGIC\\Vroem.LOGIC.csproj": {
+                "projectPath": "C:\\Users\\koenr\\source\\repos\\Vroem\\Vroem.LOGIC\\Vroem.LOGIC.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "MSTest.TestAdapter": {
+              "target": "Package",
+              "version": "[2.1.0, )"
+            },
+            "MSTest.TestFramework": {
+              "target": "Package",
+              "version": "[2.1.0, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.5.0, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[1.2.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

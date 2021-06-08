@@ -1,0 +1,85 @@
+﻿{
+  "version": "1.0.0",
+  "restore": {
+    "projectUniqueName": "C:\\Users\\koenr\\source\\repos\\Vroem\\Vroem.UnitTests\\Vroem.UnitTests.csproj",
+    "projectName": "Vroem.UnitTests",
+    "projectPath": "C:\\Users\\koenr\\source\\repos\\Vroem\\Vroem.UnitTests\\Vroem.UnitTests.csproj",
+    "outputPath": "C:\\Users\\koenr\\source\\repos\\Vroem\\Vroem.UnitTests\\obj\\",
+    "projectStyle": "PackageReference",
+    "fallbackFolders": [
+      "C:\\Microsoft\\Xamarin\\NuGet",
+      "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+    ],
+    "originalTargetFrameworks": [
+      "netcoreapp3.1"
+    ],
+    "sources": {
+      "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+      "https://api.nuget.org/v3/index.json": {}
+    },
+    "frameworks": {
+      "netcoreapp3.1": {
+        "projectReferences": {
+          "C:\\Users\\koenr\\source\\repos\\Vroem\\Vroem.API\\Vroem.API.csproj": {
+            "projectPath": "C:\\Users\\koenr\\source\\repos\\Vroem\\Vroem.API\\Vroem.API.csproj"
+          },
+          "C:\\Users\\koenr\\source\\repos\\Vroem\\Vroem.DATA\\Vroem.DATA.csproj": {
+            "projectPath": "C:\\Users\\koenr\\source\\repos\\Vroem\\Vroem.DATA\\Vroem.DATA.csproj"
+          },
+          "C:\\Users\\koenr\\source\\repos\\Vroem\\Vroem.LOGIC\\Vroem.LOGIC.csproj": {
+            "projectPath": "C:\\Users\\koenr\\source\\repos\\Vroem\\Vroem.LOGIC\\Vroem.LOGIC.csproj"
+          },
+          "C:\\Users\\koenr\\source\\repos\\Vroem\\Vroem.MVC\\Vroem.MVC.csproj": {
+            "projectPath": "C:\\Users\\koenr\\source\\repos\\Vroem\\Vroem.MVC\\Vroem.MVC.csproj"
+          }
+        }
+      }
+    },
+    "warningProperties": {
+      "warnAsError": [
+        "NU1605"
+      ]
+    }
+  },
+  "frameworks": {
+    "netcoreapp3.1": {
+      "dependencies": {
+        "MSTest.TestAdapter": {
+          "target": "Package",
+          "version": "[2.1.0, )"
+        },
+        "MSTest.TestFramework": {
+          "target": "Package",
+          "version": "[2.1.0, )"
+        },
+        "Microsoft.NET.Test.Sdk": {
+          "target": "Package",
+          "version": "[16.5.0, )"
+        },
+        "coverlet.collector": {
+          "target": "Package",
+          "version": "[1.2.0, )"
+        }
+      },
+      "imports": [
+        "net461",
+        "net462",
+        "net47",
+        "net471",
+        "net472",
+        "net48"
+      ],
+      "assetTargetFallback": true,
+      "warn": true,
+      "frameworkReferences": {
+        "Microsoft.AspNetCore.App": {
+          "privateAssets": "none"
+        },
+        "Microsoft.NETCore.App": {
+          "privateAssets": "all"
+        }
+      },
+      "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.202\\RuntimeIdentifierGraph.json"
+    }
+  }
+}

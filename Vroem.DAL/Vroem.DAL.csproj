@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Vroem.API\Vroem.API.csproj" />
+    <ProjectReference Include="..\Vroem.DATA\Vroem.DATA.csproj" />
+    <ProjectReference Include="..\Vroem.INTERFACES\Vroem.INTERFACES.csproj" />
+    <ProjectReference Include="..\Vroem.MODELS\Vroem.MODELS.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,15 @@
+﻿@model Vroem.MODELS.Car
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<form asp-action="Kenteken" , asp-controller="Auto" method="post">
+    <div class="form-group">
+        <label>Vul hier je kenteken in om makkelijk je auto te plaatsen</label>
+        <input type="text" class="form-control" name="kenteken" placeholder="Vul hier je kenteken in">
+        <span asp-validation-for="Kenteken" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>

@@ -1,0 +1,28 @@
+﻿@model LoginViewModel
+@{
+    ViewData["Title"] = "Login";
+}
+
+@using (Html.BeginForm(new {ReturnUrl = ViewBag.ReturnUrl}))
+{
+
+    <h1>Login</h1>
+    <form asp-action="Login" , asp-controller="Account" method="post">
+        <div class="form-group">
+            <label asp-for="LoginString"></label>
+            <input type="text" class="form-control" asp-for="LoginString" placeholder="Vul hier uw voornaam in">
+            <span asp-validation-for="LoginString" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Wachtwoord"></label>
+            <input type="password" class="form-control" asp-for="Wachtwoord" placeholder="Password">
+            <span asp-validation-for="Wachtwoord" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Persistent"></label>
+            <input type="checkbox" class="check" asp-for="Persistent">
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+}

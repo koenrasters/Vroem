@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "6APK4BAJiGskvp1LTliSLXWVpMMx0wnw7bcYLCN+X6B3KA6FJBAHaUkuUNz9tNE+tip9C55klxg5vAUWwki7+Q==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\koenr\\source\\repos\\Vroem\\Vroem.INTERFACES\\Vroem.INTERFACES.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\koenr\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

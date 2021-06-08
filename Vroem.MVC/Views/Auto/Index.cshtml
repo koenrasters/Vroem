@@ -1,0 +1,110 @@
+﻿@using Vroem.MODELS
+@using Microsoft.AspNetCore.Http
+@using Microsoft.AspNetCore.Routing
+@using Vroem.LOGIC
+@using System.Security.Claims
+@using Vroem.DAL
+@model BodViewModel
+@{
+    ViewData["Title"] = $"Autootje";
+    var images = ViewData["Afbeelding"] as List<Afbeelding>;
+    var bids = ViewData["Biedingen"] as List<Bod>;
+    UserManager _userManager = new UserManager(new DataAccess("db"));
+    var auto = ViewData["Auto"] as Car;
+}
+
+@if (auto != null)
+{
+    <h1>@auto.Titel</h1>
+    <div id="demo" class="carousel slide" data-ride="carousel">
+
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            @for (int i = 1; i < images.Count; i++)
+            {
+                <li data-target="#demo" data-slide-to="@i"></li>
+            }
+        </ul>
+
+        <!-- The slideshow -->
+        <div class="carousel-inner" style="height: 400px">
+            @{
+                string imgg;
+                try
+                {
+                    imgg = "data:image/png;base64," + Convert.ToBase64String(images[0].Bestand, 0, images[0].Bestand.Length);
+                }
+                catch (Exception e)
+                {
+                    imgg = "/images/404.gif";
+                }
+                <div class="carousel-item active">
+                    <img src="@imgg" width="100%" height="400px" style="object-fit: contain;">
+                </div>
+            }
+            @foreach (var afbeelding in images.Skip(1))
+            {
+                string image = "data:image/png;base64," + Convert.ToBase64String(afbeelding.Bestand, 0, afbeelding.Bestand.Length);
+                <div class="carousel-item">
+                    <img src="@image" width="100%" height="400px" style="object-fit: contain;">
+                </div>
+            }
+
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+    <br/>
+    <div class="row">
+        <div class="col-9">
+            <p class="font-weight-bold">Beschrijving:</p>
+            <p>@auto.Beschrijving</p>
+            <p>Kilometerstand van deze auto is: @auto.Kilometerstand km</p>
+            <p>Bouwjaar: @auto.Bouwjaar</p>
+            <p>Het vermogen is: @auto.Vermogen Pk</p>
+            <p>De kleur is: @auto.Kleur</p>
+            <p>De prijs is: €@auto.Prijs</p>
+            <p>Deze auto wordt aangeboden sinds: @auto.DatumGeregistreerd</p>
+            
+        </div>
+
+        <div class="col">
+            @{
+                var user = _userManager.GetUser(auto.GebruikerID);
+                <div >
+                    <p>Deze auto is van @user.Voornaam @user.Achternaam</p>
+                    <a href="mailto:@user.Email?subject=Kopen van uw @auto.Merk @auto.Model&body=Beste @user.Voornaam @user.Achternaam, %0Dik wil graag uw auto kopen %0DMvg, @User.FindFirst(ClaimTypes.GivenName).Value @User.FindFirst(ClaimTypes.Surname).Value">Stuur mail</a>
+                    <p>Of bel @user.Telefoonnummer</p>
+                </div>
+                @if (auto.Bieden)
+                {
+                    <p>Bieden mag vanaf: €@auto.Prijs</p>
+                    <form method="post">
+                        <input type="number" asp-for="Prijs"/>
+                        <input type="number" asp-for="AutoID" value="@auto.Id" hidden/>
+                        <button class="btn btn-primary" type="submit">Bied</button>
+                        <span asp-validation-for="Prijs" class="text-danger"></span>
+                    </form>
+                    @foreach (var bied in bids)
+                    {
+                        <p>@_userManager.GetUser(bied.GebruikerID).Voornaam biedt €@bied.Prijs Datum:@bied.Datum.ToShortDateString()</p>
+                    }
+                }
+            }
+        </div>
+
+
+    </div>
+}
+else
+{
+    <h1>Nee sorry hier is niks gevonden</h1>
+    <img src="/images/404.gif" alt="not found"/>
+}
